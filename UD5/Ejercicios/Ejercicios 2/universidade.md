@@ -49,3 +49,37 @@ Nota: los ejercicios 21,22,24,25,26 y 27 no funcionan
 //alumno[@beca='si']/apellido1 | //alumno[@beca='si']/apellido2 | //alumno[@beca='si']/nombre
 
 13. Nombre de las asignaturas de la titulación c04.
+
+//asignatura[@titulacion='c04']/nombre
+
+14. Nombre de las asignaturas de segundo trimestre.
+
+//asignatura[trimestre='2']/nombre
+
+15. Nombre de las asignaturas que no tienen 4 créditos teóricos.
+
+//asignatura[creditos_teoricos != 4]/nombre
+
+16. Código de la carrera que estudia el último alumno.
+
+//alumno[last()]/@id
+
+17. Código de las asignaturas que estudian mujeres.
+
+//asignatura[//alumno[sexo='Mujer']]/@id
+
+18. Nombre de los alumnos que están matriculados en la asignatura a02.
+
+//alumno[estudios/asignaturas/asignatura[@codigo='a02']]/nombre
+
+19. Códigos de las carreras que estudian los alumnos matriculados en alguna asignatura.
+
+//alumno/estudios[asignaturas/asignatura]/carrera/@codigo
+
+20. Apellidos de todos los hombres.
+
+//alumno[sexo='Hombre']/apellido1 | //alumno[sexo='Hombre']/apellido2
+
+21. Nombre de la carrera que estudia Víctor Manuel.
+
+/universidad/carreras/carrera[@id=/universidad/alumnos/alumno[nombre='Víctor Manuel']/estudios/carrera/@codigo]/nombre
