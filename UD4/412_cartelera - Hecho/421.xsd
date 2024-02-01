@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="cartelera">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="pelicula" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="titulo"/>
+                        <xs:element name="titulo-original" minOccurs="0" />
+                        <xs:element name="pais"/>
+                        <xs:element name="generos">
+                            <xs:complexType>
+                                <xs:sequence minOccurs="1" maxOccurs="unbounded">
+                                    <xs:element name="genero"/>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                        <xs:choice>
+                            <xs:element name="clasificacion">
+                                <xs:complexType>
+                                    <xs:attribute name="edad" type="xs:integer" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="sin-clasificar"/>
+                        </xs:choice>
+                        <xs:element name="sinopsis"/>
+                        <xs:choice minOccurs="1">
+                            <xs:element name="director"/>
+                            <xs:element name="directora"/>
+                        </xs:choice>
+                        <xs:element name="reparto" >
+                            <xs:complexType>
+                                <xs:choice minOccurs="1" maxOccurs="unbounded">
+                                    <xs:element name="actor"/>
+                                    <xs:element name="actriz"/>
+                                </xs:choice>
+                            </xs:complexType>
+                        </xs:element>
+                        <xs:element name="web" type="tipoweb" minOccurs="0"/>
+                        <xs:element name="imdb" type="tipoweb"/>
+                        <xs:element name="cartel"/>
+                    </xs:sequence>
+                <xs:attribute name="ano" type="xs:integer" use="required"/>
+                <xs:attribute name="duracion" type="xs:string" use="required"/>
+                <xs:attribute name="codigo" type="xs:ID"/>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+
+<xs:simpleType name="tipoweb">
+    <xs:restriction base="xs:string">
+        <xs:pattern value="https?://.*"/>
+    </xs:restriction>
+</xs:simpleType>
+</xs:schema>

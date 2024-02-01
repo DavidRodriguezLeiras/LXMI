@@ -1,0 +1,9 @@
+<!ELEMENT equipos_baloncesto (equipo)*>
+<!ELEMENT equipo (nombre,ciudad,entrenador,jugador)>
+<!ELEMENT jugador (nombre,posicion,nacionalidad)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT ciudad (#PCDATA)>
+<!ELEMENT entrenador (#PCDATA)>
+<!ELEMENT posicion (#PCDATA)>
+<!ELEMENT nacionalidad (#PCDATA)>
+<!ATTLIST posicion posicion (Base|Escolta|Alero|Pivot) #REQUIRED>

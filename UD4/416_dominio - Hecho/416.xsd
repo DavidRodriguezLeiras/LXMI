@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:simpleType name="nombreDominio">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[a-z0-9]([a-z0-9-]{0,61}[a-z0-9])?"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="tld">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[a-z]{2,3}"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="dominioCompleto">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[a-z0-9]([a-z0-9-]{0,61}[a-z0-9])?\.[a-z]{2,3}"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:element name="dominio" type="dominioCompleto"/>
+
+</xs:schema>

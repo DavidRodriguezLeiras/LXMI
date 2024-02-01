@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE paneles SYSTEM "paneles.dtd">
+<paneles>
+    <evento tipo="a" fecha="a">
+        <via>
+            <nombre>a</nombre>
+            <ref>a</ref>
+            <origen>a</origen>
+            <destino>a</destino>
+            <doble/>
+            <carriles>a</carriles>
+        </via>
+        <pk>a</pk>
+        <retencion long="a">a</retencion>
+        <sentido>a</sentido>
+        <carrilescortados valor="1">a</carrilescortados>
+    </evento>
+</paneles>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE equipos_baloncesto SYSTEM "baloncesto.dtd">
+<equipos_baloncesto>
+    <equipo>
+        <nombre></nombre>
+        <ciudad></ciudad>
+        <entrenador></entrenador>
+        <jugador>
+            <nombre></nombre>
+            <posicion posicion="Alero"></posicion>
+            <nacionalidad></nacionalidad>
+        </jugador>
+    </equipo>
+    <equipo>
+        <nombre></nombre>
+        <ciudad></ciudad>
+        <entrenador></entrenador>
+        <jugador>
+            <nombre></nombre>
+            <posicion posicion="Alero"></posicion>
+            <nacionalidad></nacionalidad>
+        </jugador>
+    </equipo>
+</equipos_baloncesto>
