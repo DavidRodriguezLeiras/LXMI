@@ -86,8 +86,14 @@ let $b := $recipe/ingrediente
 <ul>
 {
 for $recipe in doc("U:\DATOS PERSOAIS\linguaxes de marcas\UD5\xQuery\Ejercicios_xQuery\recetas\recetas.xml")//receta
-where some $ing in $recipe/ingrediente satisfies contains($ing/@nombre,"harina")
+where some $ing in $recipe/ingrediente satisfies contains($ing/@nombre,"harina") 
   return
+  <li>{$recipe}</li>
+}
+{
+for $recipe in doc("U:\DATOS PERSOAIS\linguaxes de marcas\UD5\xQuery\Ejercicios_xQuery\recetas\recetas.xml")//receta
+where some $ang in $recipe/ingrediente/ingrediente satisfies contains($ang/@nombre,"harina")
+ return
   <li>{$recipe}</li>
 }
 </ul>
