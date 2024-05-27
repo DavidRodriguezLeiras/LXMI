@@ -1,0 +1,17 @@
+10. De XML a HTML. Genera una tabla HTML:
+* con dos columnas
+** en una se muestra el usuario
+** en otra se muestra la ip
+<table>
+  <tr>
+    <th>Usuario</th>
+    <th>IP</th>
+  </tr>
+{for $a in doc("U:\DATOS PERSOAIS\linguaxes de marcas\UD5\xQuery\examen\Usuarios.xml") //usuarios/usuario
+return
+<tr>
+  <th>{$a/nombre/text()}</th>
+  <th>{$a/ip/text()}</th>
+</tr> 
+}
+</table> 

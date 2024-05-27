@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="expresiones-regulares">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="expresiones" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="expresion1" type="tipo1"/>
+                        <xs:element name="expresion2" type="tipo2"/>
+                        <xs:element name="expresion3" type="tipo2"/>
+                        <xs:element name="expresion4" type="tipo2"/>
+                        <xs:element name="expresion5" type="tipo5"/>
+                        <xs:element name="expresion6" type="tipo6"/>
+                        <xs:element name="expresion7" type="tipo7"/>
+                        <xs:element name="expresion8" type="tipo8"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+
+<xs:simpleType name="tipo1">
+    <xs:restriction base="xs:string">
+        <xs:pattern value="Capítulo [0-9]"/>
+    </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="tipo2">
+    <xs:restriction base="xs:string">
+        <xs:pattern value="Capítulo [0-9]+"/>
+    </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="tipo5">
+    <xs:restriction base="xs:string">
+        <xs:pattern value="[^0-9]Z"/>
+    </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="tipo6">
+    <xs:restriction base="xs:string">
+        <xs:pattern value="AB*C"/>
+    </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="tipo7">
+    <xs:restriction base="xs:string">
+        <xs:pattern value="RS+S[3-8]?"/>
+    </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="tipo8">
+    <xs:restriction base="xs:string">
+        <xs:pattern value="COD[0-9][0-9][0-9][a-z]+"/>
+    </xs:restriction>
+</xs:simpleType>
+
+</xs:schema>

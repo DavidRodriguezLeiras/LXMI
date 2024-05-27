@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xunta> 
+    <centro nombre="CIFP Rodolfo Ucha Piñeiro" CS="DAW" curso="1">
+        <modulo asignatura="Lenguajes de Marcas y Sistemas" horas_semanales="4" obligatorio="si" fecha_inicio="15/09/2019" fecha_fin="30/06/2020">
+            <alumno>
+                <nombre>"Ana Fernández Gutiérrez"</nombre>
+                <nif>"16965696L"</nif>
+                <telefono>"789654321"</telefono>
+                <CP>"39302"</CP>
+                <correo>"ana.fdezgtrrez@hotmail.com"</correo>
+                <direccion>"r/El Percebe, 13"</direccion>
+                <faltas></faltas>
+                <nota></nota>
+            </alumno>
+            <alumno>
+                <nombre>"Pepe Pérez"</nombre>
+                <nif>"98765432H"</nif>
+                <telefono>"656566555"</telefono>
+                <CP>"39401"</CP>
+                <correo>"yhyh@yahoo.com"</correo>
+                <direccion>"Avda. El Pez, 5"</direccion>
+                <faltas></faltas>
+                <nota>"apto</nota>
+            </alumno>
+        </modulo>
+    </centro>
+</xunta>

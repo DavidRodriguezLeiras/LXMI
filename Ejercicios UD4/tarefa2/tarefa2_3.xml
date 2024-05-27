@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<agenda>
+    <contacto>
+        <nombre>David</nombre>
+        <apellido>Rodriguez</apellido>
+        <apellido2>Leiras</apellido2>
+        <direccion>"Avenida hola hola"</direccion>
+        <telefono tipo="casa">981757372</telefono>
+        <telefono tipo="movil">555000433</telefono>
+        <telefono tipo="trabajo"></telefono>
+    </contacto>
+    <contacto>
+        <nombre>Maria</nombre>
+        <apellido>Aiuo</apellido>
+        <apellido2>Are</apellido2>
+        <direccion>"Avenida adios adios"</direccion>
+        <telefono tipo="casa"></telefono>
+        <telefono tipo="movil">555111111</telefono>
+        <telefono tipo="trabajo">987674531</telefono>
+    </contacto>
+    <contacto>
+        <nombre>Eugenia</nombre>
+        <apellido>Hidalgo</apellido>
+        <apellido2></apellido2>
+        <direccion>"Avenida eo"</direccion>
+        <telefono tipo="casa"></telefono>
+        <telefono tipo="movil">567091243</telefono>
+        <telefono tipo="trabajo"></telefono>
+    </contacto>
+</agenda>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="test2.xsl"?>
+
+<clientes>
+    <persona>
+        <nombre>Luisa</nombre>
+        <apellidos>Apel1</apellidos>
+        <direccion>dir1</direccion>
+        <sexo tipo="F"/>
+    </persona>
+    <persona>
+        <nombre>Pepito</nombre>
+        <apellidos>Apel2</apellidos>
+        <direccion>dir2</direccion>
+        <sexo tipo="M"/>
+    </persona>
+    <persona>
+        <nombre>Fernanda</nombre>
+        <apellidos>Apel3</apellidos>
+        <direccion>dir3</direccion>
+        <sexo tipo="F"/>
+    </persona>
+</clientes>

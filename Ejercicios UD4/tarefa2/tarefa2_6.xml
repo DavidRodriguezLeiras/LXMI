@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<horario_laboral>
+    <dia_semana dia="LUNS">
+        <asignatura comienzo="16,20" fin="17,10">FH</asignatura>
+        <asignatura comienzo="17,10" fin="18,00">FH</asignatura>
+        <asignatura comienzo="18,00" fin="18,50">PAR</asignatura>
+        <asignatura comienzo="18,50" fin="19,40">PAR</asignatura>
+        <asignatura comienzo="19,40" fin="20,30">PAR</asignatura>
+        <asignatura comienzo="20,30" fin="21,20">FOL</asignatura>
+        <asignatura comienzo="21,20" fin="22,10">FOL</asignatura>
+        <asignatura comienzo="22,10" fin="23,00"></asignatura>
+    </dia_semana>
+    <dia_semana dia="MARTES">
+        <asignatura comienzo="16,20" fin="17,10">ISO</asignatura>
+        <asignatura comienzo="17,10" fin="18,00">ISO</asignatura>
+        <asignatura comienzo="18,00" fin="18,50">XBD</asignatura>
+        <asignatura comienzo="18,50" fin="19,40">XBD</asignatura>
+        <asignatura comienzo="19,40" fin="20,30">LMSXI</asignatura>
+        <asignatura comienzo="20,30" fin="21,20">LMSXI</asignatura>
+        <asignatura comienzo="21,20" fin="22,10">LMSXI</asignatura>
+        <asignatura comienzo="22,10" fin="23,00"></asignatura>
+    </dia_semana>
+    <dia_semana dia="MERCORES">
+        <asignatura comienzo="16,20" fin="17,10">FH</asignatura>
+        <asignatura comienzo="17,10" fin="18,00">FH</asignatura>
+        <asignatura comienzo="18,00" fin="18,50">PAR</asignatura>
+        <asignatura comienzo="18,50" fin="19,40">PAR</asignatura>
+        <asignatura comienzo="19,40" fin="20,30">PAR</asignatura>
+        <asignatura comienzo="20,30" fin="21,20">ISO</asignatura>
+        <asignatura comienzo="21,20" fin="22,10">XBD</asignatura>
+        <asignatura comienzo="22,10" fin="23,00">XBD</asignatura>
+    </dia_semana>
+    <dia_semana dia="XOVES">
+        <asignatura comienzo="16,20" fin="17,10">ISO</asignatura>
+        <asignatura comienzo="17,10" fin="18,00">ISO</asignatura>
+        <asignatura comienzo="18,00" fin="18,50">PAR</asignatura>
+        <asignatura comienzo="18,50" fin="19,40">PAR</asignatura>
+        <asignatura comienzo="19,40" fin="20,30">XBD</asignatura>
+        <asignatura comienzo="20,30" fin="21,20">XBD</asignatura>
+        <asignatura comienzo="21,20" fin="22,10">XBD</asignatura>
+        <asignatura comienzo="22,10" fin="23,00"></asignatura>
+    </dia_semana>
+       <dia_semana dia="VENRES">
+        <asignatura comienzo="16,20" fin="17,10">ISO</asignatura>
+        <asignatura comienzo="17,10" fin="18,00">ISO</asignatura>
+        <asignatura comienzo="18,00" fin="18,50">ISO</asignatura>
+        <asignatura comienzo="18,50" fin="19,40">FOL</asignatura>
+        <asignatura comienzo="19,40" fin="20,30">FOL</asignatura>
+        <asignatura comienzo="20,30" fin="21,20">LMSXI</asignatura>
+        <asignatura comienzo="21,20" fin="22,10">LMSXI</asignatura>
+        <asignatura comienzo="22,10" fin="23,00"></asignatura>
+    </dia_semana>
+</horario_laboral>

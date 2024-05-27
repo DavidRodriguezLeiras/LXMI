@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<!-- 
+Crea el esquema que lo valide teniendo en cuenta:
+    a) El número de calle tiene que ser un número positivo que no supere el 2000.
+    b) El código postal consta sólo de 5 dígitos.
+    c) El mes debe tener siempre un valor correcto.
+    d) El año debe tener un formato de año correcto.
+    e) El valor debe ser un número con dos decimales.
+    f) Tdos los atributos son obligatorios.
+    g) El material podría no aparecer, o aparecer un máximo de tres veces.
+-->
+<xs:element name="edificio">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="direccion">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="calle" type="xs:string"/>
+                        <xs:element name="numero" type="tipoNumero"/>
+                        <xs:element name="poblacion" type="xs:string"/>
+                        <xs:element name="provincia" type="xs:string"/>
+                        <xs:element name="codigoPostal" type="tipoCP"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="dataConstrucion">
+                <xs:complexType>
+                    <xs:attribute name="mes" use="required">   
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:enumeration value="Enero"/>
+                                <xs:enumeration value="Febrero"/>
+                                <xs:enumeration value="Marzo"/>
+                                <xs:enumeration value="Abril"/>
+                                <xs:enumeration value="Mayo"/>
+                                <xs:enumeration value="Junio"/>
+                                <xs:enumeration value="Julio"/>
+                                <xs:enumeration value="Agosto"/>
+                                <xs:enumeration value="Septiembre"/>
+                                <xs:enumeration value="Octubre"/>
+                                <xs:enumeration value="Noviembre"/>
+                                <xs:enumeration value="Diciemrbe"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:attribute>
+                    <xs:attribute name="año" type="xs:gYear" use="required"/>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="material" type="xs:string" minOccurs="0" maxOccurs="3"/>
+        </xs:sequence>
+        <xs:attribute name="alquiler" type="xs:string" use="required"/>
+        <xs:attribute name="valor" use="required">
+            <xs:simpleType>
+                <xs:restriction base="xs:decimal">
+                    <xs:fractionDigits value="2"/>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+    </xs:complexType>
+</xs:element>
+
+<xs:simpleType name="tipoNumero">
+    <xs:restriction base="xs:integer">
+        <xs:minInclusive value="0"/>
+        <xs:maxInclusive value="2000"/>
+    </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="tipoCP">
+    <xs:restriction base="xs:integer">
+        <xs:minInclusive value="5"/>
+        <xs:totalDigits value="5"/>
+    </xs:restriction>
+</xs:simpleType>
+</xs:schema>    

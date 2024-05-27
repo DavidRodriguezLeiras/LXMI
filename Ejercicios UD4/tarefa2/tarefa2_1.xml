@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prueba_final>
+    <deporte tipo="Atletismo" categoria="Femenino" especialidad="100m">
+        <deportista medalla="ORO" pais="JAMAICA">"Elaine Thompson"</deportista>
+        <deportista medalla="PLATA" pais="USA">"Tori Bowie"</deportista>
+        <deportista medalla="COBRE" pais="JAMAICA">"S.Fraser-Pryce"</deportista>
+    </deporte>
+    <deporte tipo="natacion" categoria="masculino" especialidad="50m">
+        <deportista medalla="ORO" pais="USA">"Michel"</deportista>
+        <deportista medalla="PLATA" pais="España">"Antonio"</deportista>
+        <deportista medalla="COBRE" pais="Tokyo">"Shiro"</deportista>
+    </deporte>
+</prueba_final>

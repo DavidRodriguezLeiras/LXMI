@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE equipos_de_baloncesto [
+    <!ELEMENT equipos_de_baloncesto (equipo)+>
+    <!ELEMENT equipo (jugadores,entrenador*)>
+    <!ELEMENT jugador (nombre,ciudad)*>
+    <!ELEMENT jugadores (jugador)*>
+    <!ELEMENT entrenador (#PCDATA)>
+    <!ATTLIST equipo 
+        nombre CDATA #REQUIRED
+        ciudad CDATA #REQUIRED
+        jugadores CDATA #REQUIRED
+>
+    <!ATTLIST jugador posicion (Base|Escolta|Alero|Pivot) #REQUIRED>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT ciudad (#PCDATA)>
+]>
+
+<equipos_de_baloncesto>
+    <equipo nombre="RIO BREOGAN" ciudad="A CORUÑA" jugadores="4">
+        <jugadores>
+            <jugador posicion="Base">
+                <nombre>Sergio Arrollo</nombre>
+                <ciudad>Ferrol</ciudad>
+            </jugador>
+            <jugador posicion="Escolta">
+                <nombre>Anselmo Rio</nombre>
+                <ciudad>Laracha</ciudad>
+            </jugador>
+            <jugador posicion="Alero">
+                <nombre>Alfredo Caamaño</nombre>
+                <ciudad>Laracha</ciudad>
+            </jugador>
+            <jugador posicion="Pivot">
+                <nombre>Rodrigo Rodriguez</nombre>
+                <ciudad>Irixoa</ciudad>
+            </jugador>
+        </jugadores>
+        <entrenador>Santiago miñoca</entrenador>
+        <entrenador>Sara Lamp</entrenador>
+    </equipo>
+     <equipo nombre="Racing de Vigo" ciudad="Ferrol" jugadores="4">
+        <jugadores>
+            <jugador posicion="Base">
+                <nombre>Alberto chio</nombre>
+                <ciudad>Ferrol</ciudad>
+            </jugador>
+            <jugador posicion="Escolta">
+                <nombre>Alberto oihc</nombre>
+                <ciudad>Cedeira</ciudad>
+            </jugador>
+            <jugador posicion="Alero">
+                <nombre>David Lamp</nombre>
+                <ciudad>Lugo</ciudad>
+            </jugador>
+            <jugador posicion="Pivot">
+                <nombre>Ignacio Rodriguez</nombre>
+                <ciudad>Irixoa</ciudad>
+            </jugador>
+        </jugadores>
+        <entrenador>Rodolfo Ocha</entrenador>
+    </equipo>
+</equipos_de_baloncesto>

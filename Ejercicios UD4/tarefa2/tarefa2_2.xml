@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<correo asunto="Reunion del martes 19" attached_elem="proyecto.pdf">
+<sender fecha="11/06/2019" hora="17:45" sender_name="Albero Diaz" sender_addr="abdiaz@correo.com"/>
+<remitente nombre="Sara Martinez" addr="smartinez@correo.com"/>
+<texto> "Hola Sara, este es un recordatorio para la reunión del martes con los
+de Calidad a las 19.00h. Te adjunto el proyecto para que lo revises antes
+Saludos."</texto>
+</correo>

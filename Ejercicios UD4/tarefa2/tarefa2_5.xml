@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recetario>
+<receta npersonas="4">
+<nombre_receta>"Sopa de cebola"</nombre_receta>
+    <ingrediente>"1 kg de cebola singrediente</ingrediente>
+    <ingrediente>"2L de caldo de carne" </ingrediente>
+    <ingrediente>"100 gr manteiga."</ingrediente>
+    <ingrediente>"1 cullerada de fariña. "</ingrediente>
+    <ingrediente>"100 gr de queixo emmental suízo ou gruère raiado." </ingrediente>
+    <ingrediente>"Pan torrado en rebandas."</ingrediente>
+    <ingrediente>"Tomiño."</ingrediente>
+    <ingrediente>"1 folla de loureiro."</ingrediente>
+    <ingrediente>"Pementa."</ingrediente>
+<procesamiento>
+    <paso>Proceso:</paso>
+    <paso>"Pelar e partir as cebolas en toros finos."</paso>
+    <paso>"Sofritilas coa manteiga, sal e pementa a lume lento ata que estean transparentes sen dourarse."</paso>
+    <paso>"Engadir a fariña sen deixar de remover."</paso>
+    <paso>"Poñelo nunha cazola co caldo, o tomiño e o loureiro."</paso>
+    <paso>"Deixar cocer a lume lento durante uns 15 minutos."</paso>
+    <paso>"Poñer as rebandas de pan encima, empoar o queixo e gratinar ao forno"</paso>
+</procesamiento>
+</receta>
+</recetario>

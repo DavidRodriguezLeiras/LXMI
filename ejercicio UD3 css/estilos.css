@@ -1,0 +1,28 @@
+h1 {
+	text-align: center;
+	background-color: #58D3F7;
+	font-size: 25px;
+	font-family:"verdana";
+	border: 1px solid #0A31F7;
+	padding: 5px;
+}
+h3 {
+	text-align: center;
+	background-color: #58ACFA;
+	font-size: 20px;
+	font-family:"verdana";
+	border: 1px solid #0A31F7;
+	padding: 3px;
+}
+ul {
+	font-style: italic;
+	background-color: #67F70A;
+}
+h2 {
+	background-color: #67F70F;
+	color: #F73C0A;
+}
+.marked {
+	background-color: yellow;
+}
+

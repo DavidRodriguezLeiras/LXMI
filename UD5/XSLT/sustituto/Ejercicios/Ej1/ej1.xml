@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="test1.xsl"?>
+
+<elementos>
+ <elem1>elemento 1</elem1>
+ <elem1>elemento 2</elem1>
+</elementos>
